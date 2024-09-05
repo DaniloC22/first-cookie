@@ -1,0 +1,176 @@
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('/img/cookies-wallpaper.jpg');
+    background-repeat: repeat;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+nav, section, .logo, .menu, .izq, .der{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: column; /* dirección VERTICAL de los elementos de la página */
+}
+
+nav{
+    width: 100vw;
+    height: 15vh;
+    flex-direction: row;
+}
+
+section{
+    width: 100vw;
+    height: 85vh;
+    flex-direction: row;
+}
+
+.logo{
+    background: rgb(46, 43, 43);
+    width: 20vw;
+    height: 15vh;
+}
+
+.menu{
+    justify-content: flex-end; /* Lo lleva hacia la derecha al final*/
+    background: rgb(46, 43, 43);
+    width: 80vw;
+    height: 15vh;
+    flex-direction: row;
+}
+
+h2{
+    margin-right: 2rem;
+    color: rgb(214, 214, 214);
+}
+
+.izq{
+    border: 2px solid rgb(0, 0, 0);
+    background-size: cover;
+    width: 60vw;
+    height: 85vh;
+}
+
+.der{
+    border: 2.5px solid rgb(0, 0, 0);
+    width: 40vw;
+    height: 85vh;
+}
+
+#cookie{
+    width: 14.3vw;
+    height: 30vh;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer; /* cambio de cursor */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    transition: 2s;
+    background-image: url('/img/cookie.png');
+    background-size: 275px 268px;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+
+#cookie:hover{
+    background-image: url('/img/cookie-exe.png');
+    background-size: 275px 268px;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+
+h1{
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    color: rgb(99, 67, 18);
+    background: rgb(222, 196, 154);
+    border-radius: 0.7rem;
+}
+
+h4{
+    font-size: 2rem;
+    background: white;
+    border-radius: 0.7rem;
+}
+
+#modal{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenido_modal{
+    width: 70vw;
+    height: 70vh;
+    padding: 1rem;
+    margin: 5rem auto;
+    border-radius: 0.4rem;
+    background-image: url('/img/cookie.png');
+    background-repeat: repeat;
+    background-size: 6.58vw 12.5vh;
+    
+}
+
+#valor-contador{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4rem;
+}
+
+#enviar{
+    width: 5vw;
+    height: 3vh;
+}
+
+.cerrar_modal{
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    background: red;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+#abrir_modal{
+    margin-right: 1rem;
+    width: 12vw;
+    height: 6vh;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer; /* cambio de cursor */
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#delete, #mejora1, #segundos, #skin-change{
+    margin-top: 2rem;
+    width: 14vw;
+    height: 8vh;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer; /* cambio de cursor */
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#skin-change{
+    background-color: fuchsia;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOKIE CLICKER</title>
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Cookie Clicker!</h1>
+        </div>
+        <div class="menu">
+            <h2>Home</h2>
+            <h2>About</h2>
+            <h2>Sign in</h2>
+            <div id="modal">
+                <div class="contenido_modal">
+                    <span class="cerrar_modal">&times;</span>
+                    <h4>REGISTRARSE PARA UN X10 DE COOKIES</h4>
+                    <form action="" method="post">
+                        <input type="text"
+                        name="Nombre"
+                        id="Nombre"
+                        maxlength="20"
+                        minlength="6"
+                        placeholder="Nombre de Usuario"
+                        onkeydown="noEspacios(event)"
+                        required>
+        
+                        <input type="email"
+                        name="email"
+                        id="email"
+                        placeholder="E-mail"
+                        onkeydown="noEspacios(event)"
+                        required>
+        
+                        <input type="password"
+                        name="password"
+                        id="confirmPassword"
+                        maxlength="20"
+                        minlength="6"
+                        placeholder="Contraseña"
+                        onkeydown="noEspacios(event)"
+                        oninput="verificarPass()"
+                        required>
+                        
+                        <input type="password"
+                        name="password"
+                        id="confirmPassword"
+                        maxlength="20"
+                        minlength="6"
+                        placeholder="Verificar contraseña"
+                        onkeydown="noEspacios(event)"
+                        oninput="verificarPass()"
+                        required>
+        
+                        <input type="text"
+                        name="sangre"
+                        id="sangre"
+                        maxlength="20"
+                        minlength="1"
+                        placeholder="Tipo de Sangre"
+                        onkeydown="noEspacios(event)"
+                        required>
+        
+                        <input type="text"
+                        name="cookie_fav"
+                        id="cookie_fav"
+                        maxlength="20"
+                        minlength="1"
+                        placeholder="Galleta favorita"
+                        onkeydown="noEspacios(event)"
+                        required>
+        
+                        <select name="utu" id="utu" required>
+                            <option value="seleccionar" selected>Seleccionar Leche</option>
+                            <option value="conaprole">Conaprole</option>
+                            <option value="calcar">Calcar</option>
+                            <option value="blancanube">Parmalat</option>
+                        </select>
+                        <input type="checkbox" id="condiciones" name="condiciones">Acepta las condiciones del servicio?
+                        <div id="error"></div>
+                        <button id="Enviar" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            
+            <button id="abrir_modal">Registrarse para guardar progreso</button>
+        </div>
+    </nav>
+
+    <section>
+        <div class="izq"> 
+            <button id="delete">Eliminar Cookie</button>
+            <button id="mejora1">5 Cookies por click: 50 COOKIES</button>
+            <button id="segundos"></button>
+            <button onclick="cambiarImagen()" id="skin-change">Cambiar Skin: 100 COOKIES</button>
+        </div>
+        <div class="der">
+            <button id="cookie"></button>
+            <div id="valor-contador">Sin cookies :(</div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

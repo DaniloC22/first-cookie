@@ -1,0 +1,21 @@
+#nombre{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input{
+    margin-top: 0.5rem;
+}
+
+input:focus{
+    outline: none;
+}
+/* focus: estilo que cambia cuando 
+interactuamos con el elemento */
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
